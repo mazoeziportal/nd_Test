@@ -2,7 +2,7 @@
 
 echo "[TASK 1] Install Docker" 
 # install Docker
-zypper --non-interactive install docker
+zypper --non-interactive install docker=20.10.17_ce-150000.169.1
 systemctl enable docker
 usermod -G docker -a $USER
 systemctl restart docker
